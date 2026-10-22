@@ -1,0 +1,12 @@
+.pantalla {
+    display: none;
+}
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#login{
+    display: block;
+}

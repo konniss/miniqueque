@@ -7,6 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<section id="login" class="pantalla"> <h2> Inicio de Sesión </h2>
+<form> <input type = "text" placeholder="Ingresa tu usuario">
+<input type = "password" placeholder="Ingresa tu contraseña">
+<button id="btn-login" type="button"> Enviar </button> </form>
+</section>
+
+<section id="warning" class="pantalla">
+<button id="btn-warning" type="button"> Aceptar </button>
+</section>
+
+<section id="primer-plano" class="pantalla">
+    <button id="btn-PrimerPlano" type="button"> TOCAR </button>
+</section>
+
+<section id="game" class="pantalla">
+
+</section>
+
+<script>
+    let button = document.getElementById('btn-login');
+    button.addEventListener('click', () => {
+        let sectionLogin = document.getElementById('login');
+        let sectionWarning = document.getElementById('warning');
+
+        sectionLogin.style.display = 'none';
+        sectionWarning.style.display = 'block';
+    })
+
+    let btnWarning = document.getElementById('btn-warning');
+    btnWarning.addEventListener('click', () => {
+        let sectionPrimerPlano = document.getElementById('primer-plano');
+        let sectionWarning = document.getElementById('warning');
+
+        sectionPrimerPlano.style.display = 'block';
+        sectionWarning.style.display = 'none';
+    })
+
+    let btnPrimerPlano = document.getElementById('btn-PrimerPlano');
+    btnPrimerPlano.addEventListener('click', () => {
+        let sectionPrimerPlano = document.getElementById('primer-plano');
+        let sectionGame = document.getElementById('game');
+        
+        sectionPrimerPlano.style.display = 'none';
+        sectionGame.style.display = 'none';
+    })
+
+</script>
 </body>
 </html>
